@@ -379,6 +379,17 @@
             margin-right: auto;
         }
 
+        .chatbot .message.bot strong {
+            color: var(--primary-color);
+        }
+
+        .chatbot .message.bot[data-is-tip] {
+            background-color: var(--background-lighter);
+            border-left: 4px solid var(--primary-color);
+            font-size: 0.9rem;
+            margin-top: -5px;
+        }
+
         .chatbot input {
             width: 100%;
             padding: 10px;
@@ -402,6 +413,43 @@
                 bottom: 10px;
                 right: 10px;
             }
+        }
+
+        /* Quick questions */
+        .quick-questions {
+            padding: 10px;
+            background-color: var(--background-lighter);
+            border-radius: var(--border-radius-md);
+            margin-top: 10px;
+        }
+
+        .quick-questions p {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .quick-questions ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .quick-questions li {
+            margin-bottom: 5px;
+        }
+
+        .quick-question {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 0;
+            font-size: 0.9rem;
+        }
+
+        .quick-question:hover {
+            text-decoration: none;
         }
 
         /* Modal */
@@ -756,6 +804,46 @@
             {
                 question: "como enviar fotos pelo celular",
                 answer: "Pelo WhatsApp:<br>1) Abra uma conversa<br>2) Clique no clipe 📎<br>3) Escolha 'Galeria' ou 'Câmera'<br>4) Selecione a foto e envie<br>Por email:<br>1) Escreva o email<br>2) Procure o botão 'Anexar'<br>3) Escolha a foto"
+            },
+            {
+                question: "como usar o google",
+                answer: "O Google é um site de busca. Para usá-lo:<br>1) Acesse www.google.com<br>2) Digite o que você quer pesquisar na caixa branca<br>3) Pressione Enter ou clique no botão de lupa<br>4) Veja os resultados e clique no que parece mais útil"
+            },
+            {
+                question: "como salvar um site",
+                answer: "Você pode salvar sites favoritos de duas formas:<br><br><strong>No computador:</strong><br>1) Abra o site<br>2) Clique no ícone de estrela no navegador (geralmente no topo)<br>3) Escolha uma pasta para salvar<br><br><strong>No celular:</strong><br>1) Abra o site<br>2) Toque no menu (três pontos)<br>3) Escolha 'Adicionar à tela inicial'"
+            },
+            {
+                question: "o que é um aplicativo",
+                answer: "Um aplicativo (ou app) é um programa que você instala no celular ou tablet para fazer tarefas específicas. Exemplos:<br>- WhatsApp: para mensagens<br>- Instagram: para fotos<br>- Banco: para ver sua conta<br>Você baixa apps na Play Store (Android) ou App Store (iPhone)."
+            },
+            {
+                question: "como apagar historico",
+                answer: "Para apagar seu histórico de navegação:<br><br><strong>No computador:</strong><br>1) Abra o navegador<br>2) Pressione Ctrl+H (ou Command+H no Mac)<br>3) Clique em 'Limpar dados de navegação'<br><br><strong>No celular:</strong><br>1) Abra o navegador<br>2) Toque no menu (três pontos)<br>3) Vá em 'Histórico' > 'Limpar dados de navegação'"
+            },
+            {
+                question: "como mudar senha do wifi",
+                answer: "Para mudar a senha do Wi-Fi:<br>1) Conecte-se ao roteador (normalmente digitando 192.168.1.1 no navegador)<br>2) Use o nome de usuário e senha padrão (geralmente 'admin' para ambos)<br>3) Encontre a opção 'Wireless' ou 'Wi-Fi'<br>4) Altere a senha e salve as configurações<br><br>Observação: Todos os dispositivos precisarão reconectar com a nova senha."
+            },
+            {
+                question: "como fazer videochamada",
+                answer: "Você pode fazer videochamadas por:<br><br><strong>WhatsApp:</strong><br>1) Abra um chat<br>2) Toque no ícone de câmera<br><br><strong>Google Meet:</strong><br>1) Acesse meet.google.com<br>2) Clique em 'Nova reunião'<br>3) Compartilhe o link com quem você quer conversar<br><br>Você precisará de uma câmera e microfone funcionando."
+            },
+            {
+                question: "o que é nuvem",
+                answer: "Nuvem (cloud) é como um armazenamento online onde você pode guardar fotos, documentos e outros arquivos. Exemplos de serviços de nuvem:<br>- Google Drive<br>- Dropbox<br>- iCloud (para usuários Apple)<br>Vantagens: acessar seus arquivos de qualquer dispositivo e não perder se seu celular quebrar."
+            },
+            {
+                question: "como imprimir uma pagina",
+                answer: "Para imprimir uma página da internet:<br>1) Abra a página que deseja imprimir<br>2) Pressione Ctrl+P (Command+P no Mac)<br>3) Selecione a impressora<br>4) Ajuste as configurações (como orientação e páginas)<br>5) Clique em 'Imprimir'<br><br>No celular, toque no menu (três pontos) e procure a opção 'Imprimir'."
+            },
+            {
+                question: "como bloquear ligações indesejadas",
+                answer: "Para bloquear ligações no celular:<br><br><strong>Android:</strong><br>1) Abra o app Telefone<br>2) Toque nos três pontos > 'Configurações'<br>3) Vá em 'Bloquear números'<br><br><strong>iPhone:</strong><br>1) Abra o app Telefone<br>2) Toque em 'Recentes'<br>3) Toque no 'i' ao lado do número<br>4) Role para baixo e toque em 'Bloquear este contato'"
+            },
+            {
+                question: "como saber a velocidade da internet",
+                answer: "Para testar sua velocidade:<br>1) Acesse www.speedtest.net<br>2) Clique em 'Go'<br>3) Espere o teste terminar<br><br>Ele mostrará:<br>- <strong>Download:</strong> velocidade para baixar arquivos<br>- <strong>Upload:</strong> velocidade para enviar arquivos<br>- <strong>Ping:</strong> tempo de resposta (quanto menor, melhor)"
             }
         ];
 
@@ -839,6 +927,46 @@
             {
                 question: "vocês dão suporte continuo",
                 answer: "Sim! Depois das aulas básicas, oferecemos:<br>- Grupo de WhatsApp para tirar dúvidas<br>- Aulas de aprofundamento mensais<br>- Plantão de dúvidas por telefone<br>Ninguém fica sem apoio depois de começar conosco."
+            },
+            {
+                question: "posso doar por pix",
+                answer: "Sim! Aceitamos doações por PIX. Nossa chave PIX é: contato@acessibilidadedigital.org.br<br><br>Passos para doar:<br>1) Abra o app do seu banco<br>2) Vá para a opção PIX<br>3) Escolha 'Pagar com PIX'<br>4) Digite nossa chave ou escaneie o QR Code<br>5) Informe o valor e confirme<br><br>Envie o comprovante para nós!"
+            },
+            {
+                question: "quais cidades precisam de voluntarios",
+                answer: "Atualmente temos maior demanda em:<br>- Regiões periféricas de São Paulo<br>- Cidades do interior do Nordeste<br>- Comunidades rurais<br><br>Mas aceitamos voluntários de todo o Brasil para:<br>- Aulas online<br>- Tradução de materiais<br>- Suporte por WhatsApp"
+            },
+            {
+                question: "vocês emitem recibo para doação",
+                answer: "Sim! Todas as doações acima de R$ 50,00 recebem recibo para dedução no Imposto de Renda. Para doações menores, enviamos comprovante por email se solicitado. Nossos recibos são válidos conforme a Lei de Incentivo à Cultura (Lei Rouanet)."
+            },
+            {
+                question: "posso doar meu tempo sem ser professor",
+                answer: "Com certeza! Precisamos de ajuda com:<br>- Tradução de materiais<br>- Design de cartazes<br>- Organização de eventos<br>- Atendimento ao público<br>- Manutenção de equipamentos<br>- Redes sociais<br>Entre em contato contando suas habilidades!"
+            },
+            {
+                question: "como são as aulas presenciais",
+                answer: "Nossas aulas presenciais:<br>- Duração: 2 horas por semana<br>- Turmas pequenas (5-10 alunos)<br>- Material didático fornecido<br>- Local: centros comunitários ou bibliotecas<br>- Foco nas necessidades dos alunos<br><br>Os voluntários recebem treinamento e acompanhamento."
+            },
+            {
+                question: "posso sugerir um local para aulas",
+                answer: "Sim, adoramos sugestões! Envie para contato@acessibilidadedigital.org.br com:<br>- Nome do local<br>- Endereço completo<br>- Contato responsável<br>- Quantas pessoas poderiam participar<br>Nossa equipe avalia a viabilidade e entra em contato."
+            },
+            {
+                question: "qual a idade mínima para voluntariado",
+                answer: "A idade mínima é 16 anos, com autorização dos responsáveis. Não há idade máxima! Já tivemos voluntários de 15 a 82 anos. O importante é vontade de ajudar e disponibilidade."
+            },
+            {
+                question: "vocês fornecem material para voluntários",
+                answer: "Sim! Todos os voluntários recebem:<br>- Apostila digital com metodologia<br>- Apresentações prontas para aulas<br>- Lista de exercícios<br>- Acesso a nossa plataforma de treinamento<br>- Suporte da equipe pedagógica<br>E materiais físicos quando necessário."
+            },
+            {
+                question: "como funciona o voluntariado online",
+                answer: "O voluntariado online pode ser:<br>- Aulas por videoconferência (agendadas)<br>- Plantão de dúvidas por chat<br>- Correção de exercícios<br>- Criação de conteúdo<br><br>Você define seus horários disponíveis. Requer apenas computador com internet e paciência para ensinar."
+            },
+            {
+                question: "posso visitar a sede do projeto",
+                answer: "Claro! Nossa sede fica em São Paulo (Rua da Acessibilidade, 123). Agendamos visitas às terças e quintas, das 14h às 17h. Entre em contato para marcar. Também podemos agendar tour virtual se você for de outra cidade."
             }
         ];
 
@@ -901,8 +1029,49 @@
             if (isOpen) {
                 setTimeout(() => {
                     document.getElementById(`chatbotInput${type.charAt(0).toUpperCase() + type.slice(1)}`).focus();
+                    
+                    // Mostrar sugestões apenas se não houver mensagens
+                    const messages = document.getElementById(`chatbotMessages${type.charAt(0).toUpperCase() + type.slice(1)}`);
+                    if (messages.children.length <= 1) { // Apenas a mensagem inicial
+                        showQuickQuestions(type);
+                    }
                 }, 100);
             }
+        }
+
+        function showQuickQuestions(type) {
+            const qaPairs = type === 'learn' ? qaPairsLearn : qaPairsHelp;
+            const quickQuestions = document.createElement('div');
+            quickQuestions.className = 'quick-questions';
+            
+            // Pegar 3 perguntas aleatórias
+            const randomQuestions = [...qaPairs]
+                .sort(() => 0.5 - Math.random())
+                .slice(0, 3)
+                .map(pair => pair.question);
+            
+            quickQuestions.innerHTML = `
+                <p>Você pode perguntar coisas como:</p>
+                <ul>
+                    ${randomQuestions.map(q => `<li><button class="quick-question" onclick="askQuickQuestion('${q}', '${type}')">${q}</button></li>`).join('')}
+                </ul>
+            `;
+            
+            const messages = document.getElementById(`chatbotMessages${type.charAt(0).toUpperCase() + type.slice(1)}`);
+            messages.appendChild(quickQuestions);
+        }
+
+        function askQuickQuestion(question, type) {
+            const inputId = `chatbotInput${type.charAt(0).toUpperCase() + type.slice(1)}`;
+            const input = document.getElementById(inputId);
+            input.value = question;
+            
+            // Disparar o evento de Enter
+            const event = new KeyboardEvent('keypress', {key: 'Enter'});
+            input.dispatchEvent(event);
+            
+            // Remover as sugestões
+            document.querySelector('.quick-questions')?.remove();
         }
 
         function openDonationModal() {
@@ -944,13 +1113,50 @@
             
             const qaPairs = type === 'learn' ? qaPairsLearn : qaPairsHelp;
             
-            // Busca mais inteligente
+            // Busca por sinônimos e variações
+            const synonymGroups = {
+                'navegador': ['browser', 'chrome', 'firefox', 'safari', 'edge'],
+                'google': ['pesquisar na internet', 'fazer busca', 'procurar online'],
+                'wifi': ['wi-fi', 'rede sem fio', 'internet sem fio', 'conexão wireless'],
+                'doar': ['doação', 'contribuir', 'ajudar financeiramente', 'fazer doação'],
+                'voluntario': ['voluntariado', 'ensinar', 'ajudar como voluntário', 'trabalho voluntário']
+            };
+            
+            // Verifica cada par de Q&A
             for (const pair of qaPairs) {
-                const keywords = pair.question.toLowerCase().split(' ');
-                const matches = keywords.filter(keyword => lowerMessage.includes(keyword));
+                const questionWords = pair.question.toLowerCase().split(' ');
                 
-                // Se pelo menos 60% das palavras-chave corresponderem
-                if (matches.length / keywords.length >= 0.6) {
+                // Verifica correspondência direta
+                if (lowerMessage.includes(pair.question.toLowerCase())) {
+                    response = pair.answer;
+                    break;
+                }
+                
+                // Verifica sinônimos
+                let synonymMatch = false;
+                for (const [key, synonyms] of Object.entries(synonymGroups)) {
+                    if (lowerMessage.includes(key)) {
+                        for (const synonym of synonyms) {
+                            if (lowerMessage.includes(synonym)) {
+                                synonymMatch = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (synonymMatch) break;
+                }
+                
+                if (synonymMatch) {
+                    response = pair.answer;
+                    break;
+                }
+                
+                // Verifica pelo menos 60% das palavras-chave
+                const matches = questionWords.filter(word => 
+                    lowerMessage.includes(word) && word.length > 3
+                );
+                
+                if (matches.length / questionWords.length >= 0.6) {
                     response = pair.answer;
                     break;
                 }
@@ -958,7 +1164,15 @@
             
             // Adicionar sugestões de acompanhamento
             if (!response.startsWith("Desculpe")) {
-                response += "<br><br>Posso te ajudar com algo mais?";
+                const relatedQuestions = qaPairs
+                    .filter(pair => pair.question !== message.toLowerCase())
+                    .sort(() => 0.5 - Math.random())
+                    .slice(0, 3)
+                    .map(pair => `"${pair.question}"`);
+                
+                if (relatedQuestions.length > 0) {
+                    response += `<br><br>Posso te ajudar com algo mais? Talvez sobre:<br>- ${relatedQuestions.join("<br>- ")}`;
+                }
             }
             
             return response;
@@ -970,6 +1184,26 @@
             messageElement.classList.add('message', sender);
             messageElement.innerHTML = text;
             messages.appendChild(messageElement);
+            
+            // Adicionar dicas contextuais para certas respostas
+            if (sender === 'bot') {
+                const lowerText = text.toLowerCase();
+                
+                if (lowerText.includes('google') && !lowerText.includes('dica')) {
+                    const tip = document.createElement('div');
+                    tip.className = 'message bot';
+                    tip.innerHTML = '<strong>Dica:</strong> Você pode pesquisar diretamente no navegador digitando na barra de endereços, sem precisar acessar o Google primeiro!';
+                    messages.appendChild(tip);
+                }
+                
+                if (lowerText.includes('senha') && !lowerText.includes('dica')) {
+                    const tip = document.createElement('div');
+                    tip.className = 'message bot';
+                    tip.innerHTML = '<strong>Dica:</strong> Use um gerenciador de senhas como o Google Password Manager ou LastPass para guardar suas senhas com segurança!';
+                    messages.appendChild(tip);
+                }
+            }
+            
             messages.scrollTop = messages.scrollHeight;
         }
 
